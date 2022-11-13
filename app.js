@@ -24,6 +24,7 @@ if (hour >= 17 || hour < 5) {
 } else {
   container.style.backgroundImage = "url('./weather.png')";
 }
+weatherData();
 
 // send city name to weatherData function
 weatherForm.addEventListener("submit", (e) => {
@@ -84,4 +85,3 @@ function weatherData() {
   }
   navigator.geolocation.watchPosition(succesCallback, errorCallback);
 }
-weatherData();
