@@ -83,5 +83,5 @@ function weatherData() {
   function errorCallback() {
     alert("did not find your location...");
   }
-  navigator.geolocation.watchPosition(succesCallback, errorCallback);
+  navigator.geolocation.getCurrentPosition(succesCallback, errorCallback);
 }
