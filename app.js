@@ -19,7 +19,7 @@ let hour = time.getHours();
 date.innerHTML = `${day} / ${month} / ${year}`;
 
 // background changes
-if (hour > 17 && hour < 5) {
+if (hour >= 17 || hour < 5) {
   container.style.backgroundImage = "url('./night.jpg')";
 } else {
   container.style.backgroundImage = "url('./weather.png')";
